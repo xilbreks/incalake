@@ -1,431 +1,48 @@
-.why-incalake li {
-    margin-right: 10px;
-	font-weight: 700;
-	padding-left: 40px;
-}
-
-.why-incalake li:nth-child(1) {
-	margin-right: 80px;
-	font-weight: 700;
-	font-size: 18px;
-	padding-left: 0px;
-}
-
-.why-incalake li .media-body {
-	line-height: 18px;
-	width: auto;
-}
-
-.why-incalake li .media-body small {
-	display: block;
-	color: #333;
-}
-
-/*Otro :v*/
-
 .image-tour figure {
-			position: relative;
-			background: #000;
-			font-family: Arial;
-			height: 200px;
-			margin-bottom: 20px;
-		}
-
-
-		.image-tour figcaption {
-			position: absolute;
-			top: 30%;
-			right: 40px;
-			text-align: right;
-			color: #e5e5e5;
-			line-height: 16px;
-			font-weight: bold;
-			font-size: 20px;
-			left: 10%;
-			transition: 0.2s;
-		}
-
-		.image-tour img {
-			opacity: .8;
-		}
-
-		.image-tour figcaption:hover {
-			color: white;
-			font-size: 30px;
-		}
-
-		.image-tour figcaption hr {
-			border: none;
-			border-bottom: 1px solid #c9c9c9;
-			margin-top: 10px;
-			margin-right: 0px;
-			width: 100%;
-		}
-
-		.image-tour figcaption strong {
-			font-size: 16px;
-		}
-
-		.image-tour figcaption small {
-			font-size: 19px;
-			letter-spacing: 1px;
-		}
-
-		.image-tour figcaption div a {
-			border: 1px solid #f5f5f5;
-			width: 170px;
-			padding: 5px 20px;
-			color: white;
-			font-weight: bold;
-			font-size: 13px;
-		}
-
-
-/* otro mas :v */        
-.tours_valorados {
-			margin: 0 0 10px 0;
-		}
-
-		.tours_valorados>div {
-			padding: 2px;
-		}
-
-		.tours_valorados>div>a {
-			border: 1px solid #D7CDC8;
-			box-shadow: 1px 1px 1px #CCC;
-			display: block;
-			text-decoration: none;
-		}
-
-		.tours_valorados>div>a:hover span {
-			text-shadow: 0 0 3px #3D669D;
-		}
-
-		.tours_valorados>div img {
-			width: 100%;
-		}
-
-		.tours_valorados>div span {
-			position: relative;
-			display: block;
-			font: bold 1em sans;
-			padding: 5px;
-			color: white;
-			text-shadow: 0 0 3px #000;
-			background: rgba(20, 50, 40, 0.7);
-		}
-
-		#search_form_container {
-			border: 2px solid #1B914A;
-			border-radius: 5px;
-			background: #1B914A;
-		}
-
-		#search-input {
-			padding: 10px !important;
-			background: white;
-			height: 50px;
-			border-right: none;
-			font: normal 1.2em sans;
-			border: none;
-		}
-
-		.search_btn {
-			padding: 0 !important;
-		}
-
-		.search_btn button.btn {
-			height: 100% !important;
-			width: 100%;
-			margin: 0;
-			padding: 0;
-			width: 50px;
-			border: none;
-			background: #1B914A;
-		}
-
-		.search_btn button.btn:hover,
-		.search_btn button.btn:active {
-			background: #0A833A;
-		}
-
-		#lista_destinos {
-			background: #1B914A;
-			display: none;
-			border-radius: 0 0 5px 5px;
-		}
-
-		@media (min-width:768px) {
-			#lista_destinos {
-				width: 50%;
-				margin-left: 25%;
-			}
-		}
-
-		#lista_destinos table {
-			width: 99%;
-			margin: auto;
-			color: white;
-		}
-
-		#lista_destinos table td {
-			border: 1px solid #429664;
-			padding: 3px;
-			cursor: pointer;
-		}
-
-		#lista_destinos table td:hover {
-			background: #429664;
-		}
-
-/*otro mas mas */        
-ul.list-group {
-			z-index: 1;
-			position: relative;
-		}
-
-		#searchList ul>li:hover {
-			background-color: #1570a6 !important;
-			color: white;
-			font-weight: bold;
-		}
-		/*POR QUE*/
-
-		@media(min-width:768px) {
-			.panel-icon {
-				float: none !important;
-			}
-		}
-
-		.panel-icon {
-			padding: 5px;
-		}
-
-		.title-why,
-		.div-child-why {
-			padding: 0;
-		}
-
-		.title-why h1 {
-
-			color: #fff;
-		}
-		/*span why*/
-
-		.span-why {
-			border: 1px solid #ccc;
-			border-radius: 2px;
-			background: #eee;
-		}
-
-		.typography .text-success {
-			color: #53b855;
-		}
-        @media (max-width: 768px) {
-			.carousel-caption {
-				position: relative;
-				right: 0;
-				left: 0;
-				padding: 0;
-				background: var(--color-secondary);
-			}
-			.carousel-caption .location-slider-tour {
-				margin: 0;
-			}
-			.carousel-caption .location-slider-tour span {
-				background: none;
-			}
-			/*CONTROLS CAROUSEL*/
-			.carousel-control .icon-prev,
-			.carousel-control .icon-next,
-			.carousel-control .glyphicon-chevron-left,
-			.carousel-control .glyphicon-chevron-right {
-				top: 25%;
-			}
-			/*DIV SEARCH SLIDER INDEX*/
-			#custom-search-input {
-				position: relative !important;
-				bottom: 0;
-				z-index: 4;
-				background: #fff;
-				padding: 10px 0;
-				margin-top: 0 !important;
-			}
-		}
-		/*BUSCADOR*/
-
-		#custom-search-input {
-			margin-top: -300px;
-		}
-
-		@media(max-width: 1000px) {
-			#custom-search-input {
-				margin-top: -200px;
-				margin-bottom: 150px;
-
-				/* position: absolute;
-  bottom: 50%;*/
-			}
-			.carousel-indicators {
-				display: none;
-			}
-		}
-
-		@media(max-width: 768px) {
-			#custom-search-input {
-				margin-bottom: 0;
-				/* position: absolute;
-  bottom: 50%;*/
-			}
-		}
-		/*TITLES*/
-
-		.title-header {
-			font-weight: bold;
-			color: var(--color-text);
-			font-size: 20px;
-			/*border-bottom: solid;*/
-			/*border-width: 2px;*/
-			/*border-color: var(--color-complement);*/
-			padding-top: 10px;
-			padding-bottom: 20px;
-		}
-
-		.title-header span {
-			position: relative;
-			display: inline-block;
-		}
-
-		.title-header span:after {
-			content: '';
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 100%;
-			margin: 10px auto;
-			width: 50%;
-			height: 6px;
-			border-bottom: solid 2px var(--color-primary);
-		}
-
-		.line-header {
-			display: block;
-			margin: 25px 0 15px 0;
-			border-bottom: 1px solid var(--color-complement);
-			padding: 0;
-		}
-
-		.line-header div {
-			font-size: 20px;
-			margin: 0 0 -1px 0;
-			padding-bottom: 5px;
-			display: inline-block;
-			border-bottom: 1px solid var(--color-primary);
-			font-weight: bold;
-			text-transform: uppercase;
-			color: var(--color-text);
-		}
-		/*LIST*/
-
-		.div-why-icon {
-			position: relative;
-			padding: 2%;
-			text-align: center;
-		}
-
-		.why-icon {
-			height: 100px;
-			width: 100px;
-			border-radius: 100%;
-			border: 1px solid var(--color-complent);
-
-			background: #555;
-			line-height: 100px;
-			color: #fff;
-			cursor: pointer;
-		}
-
-		@media (max-width: 768px) {
-			.panel .panel-heading {
-				background: var(--color-primary);
-				color: #f5f5f5;
-			}
-		}
-
-		.div-child-why>div:hover .why-icon {
-			background: var(--color-primary);
-		}
-
-		.div-child-why>div:hover .panel-icon {
-			color: var(--color-primary);
-		}
-
-		.panel-heading {
-			cursor: pointer;
-		}
-		/*added by froy for why us?*/
-
-		.why_texts {
-			text-align: center;
-		}
-
-		.why_texts>div {
-			display: none;
-		}
-		/*end css added by froy*/
-
-		.title-why-icon {
-			font-weight: bold;
-			text-transform: uppercase;
-		}
-
-		.why ul {
-			list-style: none;
-			padding: 0;
-		}
-
-		.why li {
-			padding-left: 1.3em;
-			text-align: justify;
-		}
-
-		.why li:before {
-			content: "\f00c";
-			/* FontAwesome Unicode */
-			font-family: FontAwesome;
-			display: inline-block;
-			margin-left: -1.3em;
-			/* same as padding-left set on li */
-			width: 1.3em;
-			/* same as padding-left set on li */
-			color: var(--color-secondary);
-		}
-
-		.list-title-why {
-			top: 5%;
-			right: 15%;
-			background: var(--color-primary);
-			/*background: #9315A6;*/
-			/*padding: 0.8%;*/
-			padding: 8px;
-			color: #f5f5f5;
-			border-left: solid 5px #1a4c80;
-			/*border-left: solid 5px #6a1976;*/
-			font-weight: 300;
-			/*display: inline-block;  */
-			display: block;
-		}
-
-		.div-icon-why {
-			/*font-size: 4em;*/
-			background: var(--color-primary);
-			text-align: center;
-			height: 80px;
-			width: 80px;
-			line-height: 80px !important;
-			border-radius: 50%;
-			color: #fff;
-			cursor: pointer;
-			padding: 2%;
-			border: solid 1px;
-		}
+	position: relative;
+	background: #000;
+	font-family: Arial;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.image-tour figcaption {
+	position: absolute;
+	top: 30%;
+	right: 40px;
+	text-align: right;
+	color: #e5e5e5;
+	line-height: 16px;
+	font-weight: bold;
+	font-size: 20px;
+	left: 10%;
+	transition: 0.2s;
+}
+.image-tour img {
+	opacity: .8;
+}
+.image-tour figcaption:hover {
+	color: white;
+	font-size: 30px;
+}
+.image-tour figcaption hr {
+	border: none;
+	border-bottom: 1px solid #c9c9c9;
+	margin-top: 10px;
+	margin-right: 0px;
+	width: 100%;
+}
+.image-tour figcaption strong {
+	font-size: 16px;
+}
+.image-tour figcaption small {
+	font-size: 19px;
+	letter-spacing: 1px;
+}
+.image-tour figcaption div a {
+	border: 1px solid #f5f5f5;
+	width: 170px;
+	padding: 5px 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+}
