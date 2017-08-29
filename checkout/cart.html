@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <style>
+        .media{
+            box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+            padding: 10px 10px;
+            margin: 10px 0px;
+        }
+        .media-labels label{
+            font-weight: bold;
+            margin-bottom: 0.1em;
+        }
+        .media-body .mt-0{
+            font-weight: bold;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: #224884;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bs-wizard" style="border-bottom:0;">
+            <div class="col-xs-3 bs-wizard-step active">
+                <div class="text-center bs-wizard-stepnum">Carrito</div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a href="cart.html" class="bs-wizard-dot"></a>
+            </div>
+            <div class="col-xs-3 bs-wizard-step disabled">
+                <div class="text-center bs-wizard-stepnum">Informacion Personal</div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a href="customer.html" class="bs-wizard-dot"></a>
+            </div>
+            <div class="col-xs-3 bs-wizard-step disabled">
+                <div class="text-center bs-wizard-stepnum">Pago</div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a href="payment.html" class="bs-wizard-dot"></a>
+            </div>
+            <div class="col-xs-3 bs-wizard-step disabled">
+                <div class="text-center bs-wizard-stepnum">Confirmacion</div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a href="confirmation.html" class="bs-wizard-dot"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="media">
+                    <img class="d-flex mr-3" src="https://placekitten.com/g/200/150" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Tour 1</h5>
+                        <div class="media-labels">
+                            <label>Fecha:</label>
+                            <span>12-Agosto-2017</span>
+                        </div>
+                        <div class="media-labels">
+                            <label>Personas:</label>
+                            <span>5 Adultos</span>
+                        </div>
+                        <div class="item-bottom-bar">
+                            <a href="#">Editar</a> | <a href="#">Quitar</a>
+                            <span class="price">
+                                <strong>$ 45.99</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="d-flex mr-3" src="https://placekitten.com/g/200/150" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Tour 1</h5>
+                        <div class="media-labels">
+                            <label>Fecha:</label>
+                            <span>12-Agosto-2017</span>
+                        </div>
+                        <div class="media-labels">
+                            <label>Personas:</label>
+                            <span>5 Adultos</span>
+                        </div>
+                        <div class="item-bottom-bar">
+                            <a href="#">Editar</a> | <a href="#">Quitar</a>
+                            <span class="price">
+                                <strong>$ 45.99</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                Lol
+            </div>
+        </div>
+    </div>
+
+
+    <a href="customer.html" class="btn btn-default">Next</a>
+</body>
+
+</html>
