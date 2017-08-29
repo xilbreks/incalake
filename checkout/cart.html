@@ -53,6 +53,23 @@
             color: #224884;
             font-weight: 700;
         }
+        .order-sumary{
+            background-color: rgb(242, 242, 242);
+            padding: 20px 20px 10px 20px;
+            border-radius: 3px 3px;
+        }
+        .order-sumary button{
+            font-size: 24px;
+        }
+        .divider{
+            color: rgb(200,200,200);
+            margin-top: 0em;
+        }
+        .title-sumary{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -93,7 +110,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <div class="media">
                     <img class="d-flex mr-3" src="https://placekitten.com/g/200/150" alt="Generic placeholder image">
                     <div class="media-body">
@@ -141,59 +158,39 @@
                 </div>
                 <hr>
             </div>  
-            <div class="col-md-4">
-                <div class="toggle-affix toggle-affix-tablet">
-                    <div class="panel recap">
-                        <div class="panel-body">
-                            <div class="row">
-                                <strong class="recap-title">
-                                    Order Summary:
-                                </strong>   
+            <div class="col-lg-4">
+                <div class="order-sumary">
+                    <h2>Resumen de compra: </h2>
+                    <div class="item-sumary">
+                        <div class="row">
+                            <div class="col-8">
+                                Tour 1 visita Tour 1 visita Tour 1 visita Tour 1 visita Tour 1 visita Tour 1 visita
                             </div>
-                            <div id="recap-and-submit-anchor"></div>
-                            <div class="row recap-row " data-idx="748fb92b0ea2afe27c5a8729f075e7b3c9a611a4b5cd7913359bcc4e73fe6462">
-                            <div class="recap-item">
-                                <h4>Eiffel Tower priority access tickets with summit option and host</h4>
-                            </div> 
-                            <div class="recap-item-price text-right">
-                                $ 102.00
+                            <div class="col-4">
+                                <span class="align-middle">$56.00</span>
                             </div>
                         </div>
-                        <div class="row recap-row no-border" data-idx="98012605146be527476281e2db86b05ebb988222b94c558224cf33494f82b21c">
-                            <div class="recap-item">
-                                <h4>Buckingham Palace and St Paul's Cathedral tickets with London bus tour</h4>
+                    </div>
+                    <hr class="divider">
+                    <div class="item-sumary">
+                        <div class="row">
+                            <div class="col-8">
+                                Tour 1 visita
                             </div>
-                        <div class="recap-item-price text-right">
-                            $ 85.00
+                            <div class="col-4">
+                                $56.99
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <strong class="recap-total-price">
-                            <span class="recap-total-price-title">Total (<span class="item-count">2</span> activities):
-                            </span>
-                            <span class="recap-promo-code hidden">DISCOUNT<span class="recap-promo-code-code"></span>
-                            <span class="recap-promo-code-perc hidden">
-                                0%
-                            </span>
-                            </span>
-                            <span class="recap-promo-code-value hidden">-<span class="recap-promo-code-discount">$ 0.00</span></span>
-                            <span class="recap-tot">
-                            <span class="total-price-value-wrapper hidden">
-                            <span class="total-price-value">$ 187.00</span>
-                            </span>
-                            <span class="total-price-discounted-value force-brand-color"> $ 187.00</span>
-                            </span>
-                        </strong>
+                    <hr class="divider">
+                    <div class="title-sumary">
+                        Total (2 actividades)
                     </div>
-                    <div class="row">    
-                        <button data-musement-tracking="cart|main-c2a" type="submit" class="submit_button global-form-submit-button btn bg-primary btn-c2a btn-lg col-xs-12 force-brand-bg-color">
-                            Check out
-                        </button>
-                        <div class="spinner loading-indicator global-form-loading-indicator hidden" title="Please wait..."></div>
+                    <div class="total-price">
+                        <span>$200.89</span>
                     </div>
+                    <button class="btn btn-primary btn-block">Pagar</button>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
