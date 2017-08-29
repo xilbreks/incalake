@@ -1,205 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <style>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <style>
         body{
-            color: #494949
+        color: #494949
         }
         .media{
-            box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
-            padding: 10px 10px;
-            margin: 10px 0px;
-            font-family: 'Avenir LT W01_65 Medium1475532',Helvetica,Arial,sans-serif;
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+        padding: 10px 10px;
+        margin: 10px 0px;
+        font-family: 'Avenir LT W01_65 Medium1475532',Helvetica,Arial,sans-serif;
         }
         .media-labels label{
-            font-weight: 400;
-            margin-bottom: 0.1em;
+        font-weight: 400;
+        margin-bottom: 0.1em;
         }
         .media-labels dt{
-            color: #626262;
-            float: left;
-            padding: 0 0.5em 0 0;
+        color: #626262;
+        float: left;
+        padding: 0 0.5em 0 0;
         }
         .media-body .mt-0{
-            font-weight: 700;
+        font-weight: 700;
         }
         .item-bottom-bar{
-            width: 100%;
+        width: 100%;
         }
         .item-bottom-bar .price {
-            font-size: 24px;
-            font-weight: 700;
-            color: #224884;
-            float: right;
+        font-size: 24px;
+        font-weight: 700;
+        color: #224884;
+        float: right;
         }
         .total-price{
-            display: block;
-            text-align: right;
-            font-size: 28px;
-            line-height: 50px;
-            font-family: 'Avenir LT W01_85 Heavy1475544',Helvetica,Arial,sans-serif;
-            font-weight: 400;
+        display: block;
+        text-align: right;
+        font-size: 28px;
+        line-height: 50px;
+        font-family: 'Avenir LT W01_85 Heavy1475544',Helvetica,Arial,sans-serif;
+        font-weight: 400;
         }
         .total-price span{
-            color: #224884;
-            font-weight: 700;
+        color: #224884;
+        font-weight: 700;
         }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div class="row bs-wizard" style="border-bottom:0;">
-            <div class="col-xs-3 bs-wizard-step active">
-                <div class="text-center bs-wizard-stepnum">Carrito</div>
-                <div class="progress">
-                    <div class="progress-bar"></div>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row bs-wizard" style="border-bottom:0;">
+                <div class="col-xs-3 bs-wizard-step active">
+                    <div class="text-center bs-wizard-stepnum">Carrito</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="cart.html" class="bs-wizard-dot"></a>
                 </div>
-                <a href="cart.html" class="bs-wizard-dot"></a>
-            </div>
-            <div class="col-xs-3 bs-wizard-step disabled">
-                <div class="text-center bs-wizard-stepnum">Informacion Personal</div>
-                <div class="progress">
-                    <div class="progress-bar"></div>
+                <div class="col-xs-3 bs-wizard-step disabled">
+                    <div class="text-center bs-wizard-stepnum">Informacion Personal</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="customer.html" class="bs-wizard-dot"></a>
                 </div>
-                <a href="customer.html" class="bs-wizard-dot"></a>
-            </div>
-            <div class="col-xs-3 bs-wizard-step disabled">
-                <div class="text-center bs-wizard-stepnum">Pago</div>
-                <div class="progress">
-                    <div class="progress-bar"></div>
+                <div class="col-xs-3 bs-wizard-step disabled">
+                    <div class="text-center bs-wizard-stepnum">Pago</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="payment.html" class="bs-wizard-dot"></a>
                 </div>
-                <a href="payment.html" class="bs-wizard-dot"></a>
-            </div>
-            <div class="col-xs-3 bs-wizard-step disabled">
-                <div class="text-center bs-wizard-stepnum">Confirmacion</div>
-                <div class="progress">
-                    <div class="progress-bar"></div>
+                <div class="col-xs-3 bs-wizard-step disabled">
+                    <div class="text-center bs-wizard-stepnum">Confirmacion</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="confirmation.html" class="bs-wizard-dot"></a>
                 </div>
-                <a href="confirmation.html" class="bs-wizard-dot"></a>
             </div>
         </div>
-    </div>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="media">
-                    <img class="d-flex mr-3" src="https://placekitten.com/g/200/150" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h5 class="mt-0">Tour 1</h5>
-                        <div class="media-labels">
-                            <dt>Fecha: </dt>
-                            <span>12-Agosto-2017</span>
-                        </div>
-                        <div class="media-labels">
-                            <dt>Personas: </dt>
-                            <span>5 Adultos</span>
-                        </div>
-                        <div class="item-bottom-bar">
-                            <a href="#">Editar</a> | <a href="#">Quitar</a>
-                            <span class="price">
-                                <strong>$ 45.99</strong>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="media">
-                    <img class="d-flex mr-3" src="https://placekitten.com/g/200/150" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h5 class="mt-0">Tour 1</h5>
-                        <div class="media-labels">
-                            <dt>Fecha: </dt>
-                            <span>12-Agosto-2017</span>
-                        </div>
-                        <div class="media-labels">
-                            <dt>Personas: </dt>
-                            <span>5 Adultos</span>
-                        </div>
-                        <div class="item-bottom-bar">
-                            <a href="#">Editar</a> | <a href="#">Quitar</a>
-                            <span class="price">
-                                <strong>$ 45.99</strong>
-                            </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col-md-12  div-activity ">
+                        <div class="row content-activity">
+                            <div class="d-flex align-items-center col-md-4 div-img-activity">
+                                <a href="http://localhost/web/es/uros/0">
+                                    <img class="img-fluid img-activity" src="https://placekitten.com/g/400/300" alt="">
+                                </a>
+                            </div>
+                            <div class="div-full col-md-8 d-flex div-descripcion-prince">
+                                <div class="row d-flex align-items-end flex-column bd-highlight "  style="width: 100%;">
+                                    <div class="" style="width: 100%;">
+                                        <h5 class="mt-0">Tour 1</h5>
+                                        <div class="media-labels">
+                                            <dt>Fecha: </dt>
+                                            <span>12-Agosto-2017</span>
+                                        </div>
+                                        <div class="media-labels">
+                                            <dt>Personas: </dt>
+                                            <span>5 Adultos</span>
+                                        </div>
+                                        <div>Lorem ipsum <!-- dolor sit amet, consectetur adipisicing elit. Facere animi rerum eligendi, ullam tenetur, eveniet dicta explicabo, illum itaque vel similique numquam odit ab. Hic dolore ducimus, quibusdam expedita modi -->.</div>
+                                    </div>
+                                    
+                                    <div class="mt-auto " style="width: 100%;">
+                                        <div class="item-bottom-bar" style="width: 100%;">
+                                            <span style="float: left;"><a href="#">Editar</a> | <a href="#">Quitar</a></span>
+                                            <span style="float: right;">
+                                                <strong>$ 45.99</strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
+                    <div class="media">
+                        <img class="d-flex mr-3" src="https://placekitten.com/g/200/150" alt="Generic placeholder image">
+                        <div class="media-body" style="position: relative;">
+                            <div class="container-fluid">
+                                <h5 class="mt-0">Tour 1</h5>
+                                <div class="media-labels">
+                                    <dt>Fecha: </dt>
+                                    <span>12-Agosto-2017</span>
+                                </div>
+                                <div class="media-labels">
+                                    <dt>Personas: </dt>
+                                    <span>5 Adultos</span>
+                                </div>
+                                <div class="item-bottom-bar">
+                                    <a href="#">Editar</a> | <a href="#">Quitar</a>
+                                    <span class="price">
+                                        <strong>$ 45.99</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img class="d-flex mr-3" src="https://placekitten.com/g/200/150" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Tour 1</h5>
+                            <div class="media-labels">
+                                <dt>Fecha: </dt>
+                                <span>12-Agosto-2017</span>
+                            </div>
+                            <div class="media-labels">
+                                <dt>Personas: </dt>
+                                <span>5 Adultos</span>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est inventore error, odio illum iusto tempore corporis libero fuga nisi porro recusandae deserunt ab perspiciatis culpa facilis repellat odit natus.</div>
+                                <div>Quaerat ea esse animi nam qui nostrum accusamus, repellendus sapiente labore placeat, deserunt praesentium eaque! Aut minus, eveniet ut, recusandae laboriosam nostrum, reprehenderit, quam earum iste placeat saepe repellendus facilis.</div>
+                            </div>
+                            <div class="item-bottom-bar">
+                                <a href="#">Editar</a> | <a href="#">Quitar</a>
+                                <span class="price">
+                                    <strong>$ 45.99</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="total-price">
+                        <strong>Suma Total:</strong>
+                        <span>$ 200.89</span>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-                <div class="total-price">
-                    <strong>Suma Total:</strong>
-                    <span>$ 200.89</span>
-                </div>
-                <hr>
-            </div>  
-            <div class="col-md-4">
-                <div class="toggle-affix toggle-affix-tablet">
-                    <div class="panel recap">
-                        <div class="panel-body">
-                            <div class="row">
-                                <strong class="recap-title">
+                <div class="col-md-4">
+                    <div class="toggle-affix toggle-affix-tablet">
+                        <div class="panel recap">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <strong class="recap-title">
                                     Order Summary:
-                                </strong>   
-                            </div>
-                            <div id="recap-and-submit-anchor"></div>
-                            <div class="row recap-row " data-idx="748fb92b0ea2afe27c5a8729f075e7b3c9a611a4b5cd7913359bcc4e73fe6462">
-                            <div class="recap-item">
-                                <h4>Eiffel Tower priority access tickets with summit option and host</h4>
-                            </div> 
-                            <div class="recap-item-price text-right">
-                                $ 102.00
-                            </div>
-                        </div>
-                        <div class="row recap-row no-border" data-idx="98012605146be527476281e2db86b05ebb988222b94c558224cf33494f82b21c">
-                            <div class="recap-item">
-                                <h4>Buckingham Palace and St Paul's Cathedral tickets with London bus tour</h4>
-                            </div>
-                        <div class="recap-item-price text-right">
-                            $ 85.00
-                        </div>
-                    </div>
-                    <div class="row">
-                        <strong class="recap-total-price">
-                            <span class="recap-total-price-title">Total (<span class="item-count">2</span> activities):
-                            </span>
-                            <span class="recap-promo-code hidden">DISCOUNT<span class="recap-promo-code-code"></span>
-                            <span class="recap-promo-code-perc hidden">
-                                0%
-                            </span>
+                                    </strong>
+                                </div>
+                                <div id="recap-and-submit-anchor"></div>
+                                <div class="row recap-row " data-idx="748fb92b0ea2afe27c5a8729f075e7b3c9a611a4b5cd7913359bcc4e73fe6462">
+                                    <div class="recap-item">
+                                        <h4>Eiffel Tower priority access tickets with summit option and host</h4>
+                                    </div>
+                                    <div class="recap-item-price text-right">
+                                        $ 102.00
+                                    </div>
+                                </div>
+                                <div class="row recap-row no-border" data-idx="98012605146be527476281e2db86b05ebb988222b94c558224cf33494f82b21c">
+                                    <div class="recap-item">
+                                        <h4>Buckingham Palace and St Paul's Cathedral tickets with London bus tour</h4>
+                                    </div>
+                                    <div class="recap-item-price text-right">
+                                        $ 85.00
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <strong class="recap-total-price">
+                                    <span class="recap-total-price-title">Total (<span class="item-count">2</span> activities):
+                                </span>
+                                <span class="recap-promo-code hidden">DISCOUNT<span class="recap-promo-code-code"></span>
+                                <span class="recap-promo-code-perc hidden">
+                                    0%
+                                </span>
                             </span>
                             <span class="recap-promo-code-value hidden">-<span class="recap-promo-code-discount">$ 0.00</span></span>
                             <span class="recap-tot">
-                            <span class="total-price-value-wrapper hidden">
-                            <span class="total-price-value">$ 187.00</span>
+                                <span class="total-price-value-wrapper hidden">
+                                    <span class="total-price-value">$ 187.00</span>
+                                </span>
+                                <span class="total-price-discounted-value force-brand-color"> $ 187.00</span>
                             </span>
-                            <span class="total-price-discounted-value force-brand-color"> $ 187.00</span>
-                            </span>
-                        </strong>
-                    </div>
-                    <div class="row">    
-                        <button data-musement-tracking="cart|main-c2a" type="submit" class="submit_button global-form-submit-button btn bg-primary btn-c2a btn-lg col-xs-12 force-brand-bg-color">
+                            </strong>
+                        </div>
+                        <div class="row">
+                            <button data-musement-tracking="cart|main-c2a" type="submit" class="submit_button global-form-submit-button btn bg-primary btn-c2a btn-lg col-xs-12 force-brand-bg-color">
                             Check out
-                        </button>
-                        <div class="spinner loading-indicator global-form-loading-indicator hidden" title="Please wait..."></div>
+                            </button>
+                            <div class="spinner loading-indicator global-form-loading-indicator hidden" title="Please wait..."></div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
-
-
-    <a href="customer.html" class="btn btn-default">Next</a>
+</div>
+<a href="customer.html" class="btn btn-default">Next</a>
 </body>
-
 </html>
