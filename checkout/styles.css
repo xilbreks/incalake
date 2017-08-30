@@ -64,7 +64,8 @@ body{
         font-weight: 700;
         }
         .order-sumary{
-        background-color: rgb(242, 242, 242);
+        /*background-color: rgb(242, 242, 242);*/
+        background: rgba(222, 222, 222, 0.57);
         padding: 20px 20px 20px 20px;
         border-radius: 3px 3px;
         }
