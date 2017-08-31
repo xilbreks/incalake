@@ -1,3 +1,13 @@
+/*global*/
+:root {
+--color-primary: #187fbc;
+--color-danger: #f85252;
+--color-secondary: rgb(74, 180, 52);
+--color-text: rgba(0, 0, 0, 0.74);
+/* --color-complement: rgba(204, 204, 204, 0.33); */
+/*--color-complement: rgba(223, 223, 223, 0.42);*/
+--color-complement: #f7f7f7;
+}
 
 /* Items y resumen de compra */
 .media{
