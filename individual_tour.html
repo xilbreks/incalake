@@ -101,7 +101,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-9 col-lg-9">
+      
+        <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+
         <div class="panel panel-default content-content" id="primero">
+
+
           <h1 id="nodejs">Tour a la isla flotante de los uros</h1>
           <h2 id="nodejs-and-npm">Tour compartido a las islas de los uros</h2>
           <img src="https://placekitten.com/g/1100/600" class="img-fluid" alt="Responsive image" style="margin-bottom:1em;border: 5px solid white;
@@ -299,14 +304,19 @@
             </div>
           </div>
         </div>
+</div>
       </div>
       <div class="col-lg-3 col-lg-3">
         <div style="position: sticky;top:40px">
-          <div class="list-group content-menu">
-            <a href="#primero" class="list-group-item">Tour compartido 9:00 am a las islas de los uros</a>
-            <a href="#segundo" class="list-group-item">Tour compartido 3:00 pm a las islas de los uros</a>
-            <a href="#tercero" class="list-group-item">Tour privado a las islas de los uros</a>
-          </div>
+        <nav id="navbar-example3" class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">navbar</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#primero">Tour compartido 9:00 am a las islas de los uros</a>
+            <a class="nav-link" href="#segundo">Tour compartido 3:00 pm a las islas de los uros</a>
+            <a class="nav-link" href="#tercero">Tour privado a las islas de los uros</a>
+          </nav>
+        </nav>
+
           <div class="content-content">
             <h5>Necesita Aiuda?</h5>
             <ul class="list-inline" style="font-size:1.1em; margin-left: 0px;">
@@ -332,7 +342,9 @@
   <footer style="background-color:#1e6496;text-align:center;color:white;height:3em;padding:1em 0 1em 0">
     xilbreks
   </footer>
-
+<script>
+  $('body').scrollspy({ target: '#navbar-example3' })
+</script>
 </body>
 
 </html>
