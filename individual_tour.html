@@ -39,6 +39,16 @@
     .navbar-light .navbar-nav .nav-link:hover {
       color: rgba(255, 255, 255, 0.99);
     }
+
+    a.nav-item.nav-link.active{
+      border-top: 3px solid orange;
+    }
+    .tab-pane.fade.active.show,
+    .tab-pane.fade.show.active,
+    .tab-pane.fade{
+      margin-top: 1em;
+    }
+
   </style>
   <div style="background-color:#1e6496">
     <div class="container">
@@ -133,96 +143,101 @@
         <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
 
         <div class="panel panel-default content-content" id="primero">
-        <h1 id="nodejs">Tour a la isla flotante de los uros</h1>
+          <h1 id="nodejs">Tour a la isla flotante de los uros</h1>
           <h2 id="nodejs-and-npm">Tour compartido a las islas de los uros</h2>
-
-        <nav class="nav nav-tabs" id="myTab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab-1" data-toggle="tab" href="#nav-home-1" role="tab" aria-controls="nav-home-1" aria-expanded="true">Descripcion</a>
-          <a class="nav-item nav-link" id="nav-profile-tab-1" data-toggle="tab" href="#nav-profile-1" role="tab" aria-controls="nav-profile-1">incluye</a>
-          <a class="nav-item nav-link" id="nav-other-tab-1" data-toggle="tab" href="#nav-other-1" role="tab" aria-controls="nav-other-1">itinerario</a>
-          <a class="nav-item nav-link" id="nav-next-tab-1" data-toggle="tab" href="#nav-next-1" role="tab" aria-controls="nav-next-1">mas informacion</a>
-        </nav>
-        <div class="tab-content" id="nav-tabContent" style="min-height: 300px;">
-          <div class="tab-pane fade show active" id="nav-home-1" role="tabpanel" aria-labelledby="nav-home-tab-1">
-            <img src="https://placekitten.com/g/1100/600" class="img-fluid" alt="Responsive image" style="margin-bottom:1em;border: 5px solid white;
+          <img src="https://placekitten.com/g/1100/600" class="img-fluid" alt="Responsive image" style="margin-bottom:1em;border: 5px solid white;
           box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);">
-          <br>
-          <h4>Descripcion</h4>
-          <p>
-            En este tour se le recogerá en sus hoteles desde el centro de Puno, para poder pasar al puerto de Puno; donde tomaremos nuestra
-            embarcación cómoda, a motor; la cual nos llevará por su tour a las famosas Islas flotantes de los UROS; Tendrá
-            un guía español/inglés (Requerimiento especial idiomas Alemán y Francés) que le mostrará este hermoso lugar,
-            haciéndole conocer la vida y la historia de estos fascinantes Uros; puede elegir horario tanto en la mañana o
-            en la tarde como se ve en el itinerario del lado. Una excursión de 3 horas que la recordará toda su vida.
-          </p>
-          </div>
-          <div class="tab-pane fade" id="nav-profile-1" role="tabpanel" aria-labelledby="nav-profile-tab-1">
-            <h4>Incluye</h4>
-          <p>
-            <ul>
-              <li>Entradas Uros</li>
-              <li>Traslado hotel - puerto - hotel</li>
-              <li>Barco a motor (con SSHH y asientos tipo bus)</li>
-            </ul>
-          </p>
-          <h4>No Incluye</h4>
-          <p>
-            <ul>
-              <li>Gastos Extras</li>
-            </ul>
-          </p>
-          </div>
-          <div class="tab-pane fade" id="nav-other-1" role="tabpanel" aria-labelledby="nav-other-tab-1">
-            <h4>Itinerario</h4>
-          <p>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Actividad</th>
-                  <th>Hora</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Recojo en los hoteles del centro de Puno. (De acuerdo a su hotel le diremos una hora más exacta)</td>
-                  <td>08:45AM</td>
-                </tr>
-                <tr>
-                  <td>Salida del barco desde el Puerto.</td>
-                  <td>09:15AM</td>
-                </tr>
-                <tr>
-                  <td>Visita 2 Flotantes de los Uros.</td>
-                  <td>10:00AM</td>
-                </tr>
-                <tr>
-                  <td>Regreso a los Hoteles del Centro de Puno.</td>
-                  <td>12:30PM</td>
-                </tr>
-              </tbody>
-            </table>
-          </p>
-          </div>
-          <div class="tab-pane fade" id="nav-next-1" role="tabpanel" aria-labelledby="nav-next-tab-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi consectetur, officia praesentium, temporibus nostrum laboriosam unde, saepe reprehenderit dolore quo eum nihil ut a nam enim ratione velit consequuntur accusamus.
-          </div>
-        </div>
+
+          <nav class="nav nav-tabs" role="tablist">
+            <a role="tab" data-toggle="tab" class="nav-item nav-link active"  href="#descripcion-tab-c" >
+              Descripcion
+            </a>
+            <a role="tab" data-toggle="tab" class="nav-item nav-link" href="#itinerario-tab-c" >
+              incluye
+            </a>
+            <a role="tab" data-toggle="tab" class="nav-item nav-link" href="#incluye-tab-c" >
+              itinerario
+            </a>
+            <a role="tab" data-toggle="tab" class="nav-item nav-link" href="#informacion-tab-c" >
+              mas informacion
+            </a>
+          </nav>
 
 
 
-          
-          
+          <div class="tab-content" style="min-height: 300px;">
+            <div role="tabpanel" class="tab-pane fade show active" id="descripcion-tab-c"  >
+              <h4>Descripcion</h4>
+              <p>
+                En este tour se le recogerá en sus hoteles desde el centro de Puno, para poder pasar al puerto de Puno; donde tomaremos nuestra
+                embarcación cómoda, a motor; la cual nos llevará por su tour a las famosas Islas flotantes de los UROS; Tendrá
+                un guía español/inglés (Requerimiento especial idiomas Alemán y Francés) que le mostrará este hermoso lugar,
+                haciéndole conocer la vida y la historia de estos fascinantes Uros; puede elegir horario tanto en la mañana o
+                en la tarde como se ve en el itinerario del lado. Una excursión de 3 horas que la recordará toda su vida.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="itinerario-tab-c"  >
+              <h4>Incluye</h4>
+              <p>
+                <ul>
+                  <li>Entradas Uros</li>
+                  <li>Traslado hotel - puerto - hotel</li>
+                  <li>Barco a motor (con SSHH y asientos tipo bus)</li>
+                </ul>
+              </p>
+              <h4>No Incluye</h4>
+              <p>
+                <ul>
+                  <li>Gastos Extras</li>
+                </ul>
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="incluye-tab-c"  >
+              <h4>Itinerario</h4>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Actividad</th>
+                    <th>Hora</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Recojo en los hoteles del centro de Puno. (De acuerdo a su hotel le diremos una hora más exacta)</td>
+                    <td>08:45AM</td>
+                  </tr>
+                  <tr>
+                    <td>Salida del barco desde el Puerto.</td>
+                    <td>09:15AM</td>
+                  </tr>
+                  <tr>
+                    <td>Visita 2 Flotantes de los Uros.</td>
+                    <td>10:00AM</td>
+                  </tr>
+                  <tr>
+                    <td>Regreso a los Hoteles del Centro de Puno.</td>
+                    <td>12:30PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="informacion-tab-c" >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi consectetur, officia praesentium, temporibus nostrum laboriosam unde, saepe reprehenderit dolore quo eum nihil ut a nam enim ratione velit consequuntur accusamus.
+            </div>
+          </div>
+   
           
           
           <div class="row">
-            <div class="col-6">
-              <button class="btn btn-info btn-block"><i class="fa fa-info"></i> Cotizar</button>
-            </div>
-            <div class="col-6">
-              <button class="btn btn-success btn-block"><i class="fa fa-cart-plus"></i> Agregar al carrito</button>
+            <div class="col-12">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
             </div>
           </div>
         </div>
+        
         <div class="panel panel-default content-content" id="segundo">
           <h1 id="nodejs">Tour a la isla flotante de los uros</h1>
           <h2 id="nodejs-and-npm">Tour compartido a las islas de los uros</h2>
