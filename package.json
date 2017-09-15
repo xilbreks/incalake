@@ -11,6 +11,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
-    "popper.js": "1.11.0"
+    "popper.js": "1.11.0",
+    "semantic-ui-flag": "^2.2.12"
   }
 }
